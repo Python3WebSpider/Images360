@@ -21,7 +21,7 @@ NEWSPIDER_MODULE = 'images360.spiders'
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-# CONCURRENT_REQUESTS = 32
+# CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
@@ -66,7 +66,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     'images360.pipelines.ImagePipeline': 300,
     'images360.pipelines.MongoPipeline': 301,
-    'images360.pipelines.MysqlPipeline': 302,
+    # 'images360.pipelines.MysqlPipeline': 302,
 }
 
 IMAGES_STORE = './images'
